@@ -1,0 +1,61 @@
+Clock {
+  text-align: center;
+}
+
+// * {
+//   border: 1px solid green;
+// }
+
+.now-time-container {
+  width: 100%;
+  border: 1px solid darkolivegreen;
+
+
+
+  main {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    .now-time {
+      font-weight: 100;
+      font-size: 1.4em;
+    }
+
+    .day {
+      color: red;
+
+    }
+
+    .month {
+      color: green;
+    }
+
+    .clock {
+      font-weight: 400;
+      color: darkolivegreen;
+      // border: 1px solid darkolivegreen;
+      padding: 1% 6%;
+
+      span {
+        box-shadow: 0 4px 0 yellowgreen;
+      }
+
+      .colon {
+        color: yellowgreen;
+        font-size: 1.6rem;
+        animation: blink 1s steps(5, start) infinite;
+      }
+    }
+  }
+
+
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
